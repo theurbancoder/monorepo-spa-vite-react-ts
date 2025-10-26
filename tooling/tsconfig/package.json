@@ -1,0 +1,9 @@
+{
+  "name": "@my-org/tsconfig",
+  "version": "1.0.0",
+  "private": false,
+  "main": "base.json",
+  "exports": {
+    ".": "./base.json"
+  }
+}

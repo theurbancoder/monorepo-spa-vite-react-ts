@@ -1,0 +1,22 @@
+{
+  "name": "@my-org/vite",
+  "version": "1.0.0",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pnpm run clean && tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "catalog:vite",
+    "@my-org/eslint": "workspace:*",
+    "@my-org/tsconfig": "workspace:*",
+    "eslint": "catalog:eslint",
+    "typescript": "^5.0.2",
+    "vite": "catalog:vite",
+    "vite-plugin-externalize-dependencies": "catalog:vite"
+  }
+}

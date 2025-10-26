@@ -1,0 +1,24 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "tooling/*"
+
+catalogs:
+  react:
+    react: ^18.3.1
+    react-dom: ^18.3.1
+    "@types/react": "^18.3.1"
+    "@types/react-dom": "^18.3.1"
+  spa:
+    single-spa: ^6.0.3
+    single-spa-react: ^6.0.2
+    single-spa-layout: "^3.0.0"
+  eslint:
+    eslint: ^9.38.0
+    "@eslint/js": "^9.38.0"
+  vite:
+    vite: "^7.1.12"
+    vite-plugin-externalize-dependencies: "^1.0.1"
+    "@vitejs/plugin-react": "^5.1.0"
+  typescript:
+    typescript: ^5.9.3

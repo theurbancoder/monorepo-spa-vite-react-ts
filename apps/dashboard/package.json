@@ -1,0 +1,29 @@
+{
+  "name": "microfrontend2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode standalone",
+    "start": "vite --port 3007 --mode combined",
+    "build": "tsc && vite build",
+    "lint": "eslint src --max-warnings 0",
+    "type-check": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "catalog:react",
+    "react-dom": "catalog:react",
+    "single-spa-react": "catalog:spa"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:react",
+    "@types/react-dom": "catalog:react",
+    "@my-org/eslint": "workspace:*",
+    "@my-org/tsconfig": "workspace:*",
+    "@my-org/vite": "workspace:*",
+    "eslint": "catalog:eslint",
+    "typescript": "catalog:typescript",
+    "vite": "catalog:vite"
+  }
+}
